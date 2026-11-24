@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan | UI/UX Designer & Frontend Developer</title>
+  <meta name="description" content="Portfolio of Alex Morgan, a UI/UX designer and creative frontend developer." />
+  <meta name="theme-color" content="#050505" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+   <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Background decoration -->
+  <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Alex Morgan, home">Alex<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-float hero-float--1" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+      <div class="hero-float hero-float--2" aria-hidden="true"><i class="fa-solid fa-pen-nib"></i></div>
+      <div class="hero-float hero-float--3" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+      <div class="hero-float hero-float--4" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+
+      <div class="container hero-inner">
+        <p class="hero-name anim anim-down">Alex Morgan</p>
+
+        <div class="avatar anim anim-scale">
+          <span class="avatar-ring" aria-hidden="true"></span>
+          <span class="avatar-ring avatar-ring--2" aria-hidden="true"></span>
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+            alt="Portrait of Alex Morgan"
+            width="300" height="300"
+            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 300 300%27%3E%3Crect width=%27300%27 height=%27300%27 fill=%27%23151515%27/%3E%3Ccircle cx=%27150%27 cy=%27115%27 r=%2760%27 fill=%27%23B6FF00%27 opacity=%27.85%27/%3E%3Cpath d=%27M40 300c0-70 50-110 110-110s110 40 110 110z%27 fill=%27%23B6FF00%27 opacity=%27.55%27/%3E%3C/svg%3E';"
+          />
+        </div>
+
+        <h1 class="hero-title anim anim-left">Hi, It's <span class="accent">Alex Morgan</span></h1>
+
+        <p class="hero-role anim anim-right">
+          I'm a <span class="typing" id="typing" aria-live="polite"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-text anim anim-up">
+          I craft immersive digital experiences where thoughtful design meets clean, performant code.
+          Let's turn your boldest ideas into interfaces people love to use.
+        </p>
+
+        <div class="hero-cta anim anim-up">
+          <a href="#contact" class="btn btn-primary">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <ul class="socials anim anim-up" aria-label="Social media links">
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about section"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">Who I am</span>
+          <h2>About <span class="accent">Me</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-media anim anim-left">
+            <div class="about-frame">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                alt="Alex Morgan working at a desk"
+                loading="lazy" width="400" height="480"
+                onerror="this.onerror=null;this.style.display='none';"
+              />
+            </div>
+            <div class="about-badge glass">
+              <strong class="counter" data-target="6">0</strong><span>+</span>
+              <small>Years of experience</small>
+            </div>
+          </div>
+
+          <div class="about-body anim anim-right">
+            <h3>Designer who codes. Developer who cares.</h3>
+            <p>
+              I'm a UI/UX designer and frontend developer with over six years of experience building
+              products for startups and global brands. I love bridging the gap between design and
+              engineering, shipping interfaces that are beautiful, accessible and fast.
+            </p>
+            <p>
+              When I'm not pushing pixels or refactoring CSS, you'll find me exploring generative art,
+              mentoring juniors, or hunting for the perfect espresso.
+            </p>
+
+            <div class="stats">
+              <div class="stat glass"><strong class="counter" data-target="80">0</strong><span>+</span><small>Projects</small></div>
+              <div class="stat glass"><strong class="counter" data-target="45">0</strong><span>+</span><small>Happy clients</small></div>
+              <div class="stat glass"><strong class="counter" data-target="12">0</strong><span></span><small>Awards</small></div>
+            </div>
+
+            <div class="skills" id="skills">
+              <div class="skill">
+                <div class="skill-top"><span>UI/UX Design</span><span class="skill-pct">95%</span></div>
+                <div class="skill-bar" role="progressbar" aria-label="UI/UX Design" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95"><span data-level="95"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-top"><span>HTML &amp; CSS</span><span class="skill-pct">98%</span></div>
+                <div class="skill-bar" role="progressbar" aria-label="HTML and CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="98"><span data-level="98"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-top"><span>JavaScript</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar" role="progressbar" aria-label="JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span data-level="90"></span></div>
+              </div>
+              <div class="skill">
+                <div class="skill-top"><span>Motion &amp; Animation</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar" role="progressbar" aria-label="Motion and Animation" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span data-level="85"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">What I do</span>
+          <h2>My <span class="accent">Services</span></h2>
+          <p>End-to-end design and development to take your product from idea to launch.</p>
+        </header>
+
+        <div class="grid services-grid">
+          <article class="card service anim anim-up">
+            <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Research-driven wireframes, prototypes and polished interfaces that feel intuitive from the first tap.</p>
+          </article>
+          <article class="card service anim anim-up" style="--d:.1s">
+            <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Clean, semantic, accessible code with smooth animations and pixel-perfect implementation.</p>
+          </article>
+          <article class="card service anim anim-up" style="--d:.2s">
+            <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Responsive Web Design</h3>
+            <p>Layouts that adapt gracefully to every screen, from ultra-wide monitors to small phones.</p>
+          </article>
+          <article class="card service anim anim-up" style="--d:.3s">
+            <div class="icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Website Optimization</h3>
+            <p>Core Web Vitals, SEO and performance tuning so your site loads fast and ranks higher.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">Selected work</span>
+          <h2>Featured <span class="accent">Projects</span></h2>
+          <p>A few recent projects that showcase my approach to design and engineering.</p>
+        </header>
+
+        <div class="grid projects-grid">
+          <article class="project anim anim-up">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Analytics dashboard interface for the Pulse project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Pulse Analytics project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Pulse Analytics</h3>
+              <p>A real-time SaaS analytics dashboard with customizable widgets and dark mode.</p>
+              <ul class="tags"><li>Figma</li><li>JavaScript</li><li>Chart.js</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project anim anim-up" style="--d:.1s">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="E-commerce storefront on a laptop for the Nova Store project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Nova Store project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Nova Store</h3>
+              <p>A conversion-focused e-commerce storefront with a lightning-fast checkout flow.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Stripe</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project anim anim-up" style="--d:.2s">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Mobile fitness app screens for the Fitly project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Fitly project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Fitly App</h3>
+              <p>Mobile-first fitness tracker UI with gamified goals and delightful micro-interactions.</p>
+              <ul class="tags"><li>UI/UX</li><li>Prototyping</li><li>Lottie</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project anim anim-up">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="Brand identity mockups for the Lumen Studio project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Lumen Studio project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Lumen Studio</h3>
+              <p>Brand identity and marketing website for a boutique creative agency.</p>
+              <ul class="tags"><li>Branding</li><li>GSAP-free</li><li>CSS</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project anim anim-up" style="--d:.1s">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Code editor with a landing page build for the Orbit project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Orbit project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Orbit Landing</h3>
+              <p>An animated product launch page that boosted sign-ups by 140% in the first month.</p>
+              <ul class="tags"><li>HTML</li><li>Animations</li><li>SEO</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project anim anim-up" style="--d:.2s">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80" alt="Workspace with design sketches for the Atlas Travel project" loading="lazy" width="800" height="520" />
+              <div class="project-overlay"><a href="#" class="btn btn-primary btn-sm" aria-label="View Atlas Travel project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+            <div class="project-body">
+              <h3>Atlas Travel</h3>
+              <p>A travel-planning platform with interactive maps and a collaborative itinerary builder.</p>
+              <ul class="tags"><li>UX Research</li><li>JavaScript</li><li>Maps API</li></ul>
+              <a href="#" class="link-arrow">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">Kind words</span>
+          <h2>Client <span class="accent">Testimonials</span></h2>
+        </header>
+
+        <div class="carousel anim anim-up">
+          <button class="carousel-btn carousel-btn--prev" id="prevBtn" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+
+          <div class="carousel-track" id="carouselTrack" tabindex="0" aria-label="Testimonials carousel">
+            <article class="testimonial glass">
+              <div class="stars" role="img" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <blockquote>Alex transformed our clunky dashboard into something our customers genuinely enjoy. Delivery was fast, communication was flawless.</blockquote>
+              <footer>
+                <img src="https://i.pravatar.cc/120?img=47" alt="Portrait of Sarah Kim" loading="lazy" width="56" height="56" onerror="this.style.visibility='hidden'" />
+                <div><strong>Sarah Kim</strong><span>Product Lead, Pulse</span></div>
+              </footer>
+            </article>
+
+            <article class="testimonial glass">
+              <div class="stars" role="img" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <blockquote>The attention to detail is unreal. Our new storefront loads instantly and conversions went up within weeks of launch.</blockquote>
+              <footer>
+                <img src="https://i.pravatar.cc/120?img=12" alt="Portrait of Daniel Okafor" loading="lazy" width="56" height="56" onerror="this.style.visibility='hidden'" />
+                <div><strong>Daniel Okafor</strong><span>Founder, Nova Store</span></div>
+              </footer>
+            </article>
+
+            <article class="testimonial glass">
+              <div class="stars" role="img" aria-label="4.5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+              <blockquote>A rare mix of creative vision and technical rigor. Alex brought our brand to life with animations that feel effortless.</blockquote>
+              <footer>
+                <img src="https://i.pravatar.cc/120?img=32" alt="Portrait of Maria Lopez" loading="lazy" width="56" height="56" onerror="this.style.visibility='hidden'" />
+                <div><strong>Maria Lopez</strong><span>Creative Director, Lumen</span></div>
+              </footer>
+            </article>
+
+            <article class="testimonial glass">
+              <div class="stars" role="img" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <blockquote>Professional, proactive and a joy to work with. Our app's UX scores doubled after Alex's redesign.</blockquote>
+              <footer>
+                <img src="https://i.pravatar.cc/120?img=15" alt="Portrait of James Carter" loading="lazy" width="56" height="56" onerror="this.style.visibility='hidden'" />
+                <div><strong>James Carter</strong><span>CEO, Fitly</span></div>
+              </footer>
+            </article>
+          </div>
+
+          <button class="carousel-btn carousel-btn--next" id="nextBtn" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE / EDUCATION ===================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">My journey</span>
+          <h2>Education &amp; <span class="accent">Experience</span></h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"><span id="timelineFill"></span></div>
+
+          <article class="t-item anim anim-left">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2023 – Present</span>
+              <h3>Senior Frontend Developer</h3>
+              <h4>Nebula Labs</h4>
+              <p>Leading the design system and frontend architecture for a suite of fintech products.</p>
+            </div>
+          </article>
+
+          <article class="t-item anim anim-right">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2020 – 2023</span>
+              <h3>UI/UX Designer</h3>
+              <h4>Pixel &amp; Co. Agency</h4>
+              <p>Designed web and mobile experiences for 30+ clients across e-commerce, health and travel.</p>
+            </div>
+          </article>
+
+          <article class="t-item anim anim-left">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2018 – 2020</span>
+              <h3>B.Sc. Computer Science</h3>
+              <h4>University of Nairobi</h4>
+              <p>Graduated with honors; focused on human-computer interaction and web technologies.</p>
+            </div>
+          </article>
+
+          <article class="t-item anim anim-right">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card glass">
+              <span class="t-date">2017 – 2018</span>
+              <h3>Junior Web Developer</h3>
+              <h4>BrightWave Studio</h4>
+              <p>Built responsive marketing sites and learned the craft of clean, maintainable code.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <header class="section-head anim anim-up">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's Work <span class="accent">Together</span></h2>
+          <p>Have a project in mind? Send me a message and I'll get back to you within 24 hours.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info anim anim-left">
+            <ul>
+              <li class="glass"><i class="fa-solid fa-envelope"></i><div><small>Email</small><a href="mailto:hello@alexmorgan.dev">hello@alexmorgan.dev</a></div></li>
+              <li class="glass"><i class="fa-solid fa-phone"></i><div><small>Phone</small><a href="tel:+254700000000">+254 700 000 000</a></div></li>
+              <li class="glass"><i class="fa-solid fa-location-dot"></i><div><small>Location</small><span>Nairobi, Kenya</span></div></li>
+            </ul>
+            <ul class="socials" aria-label="Contact social links">
+              <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form glass anim anim-right" id="contactForm" data-recipient="hello@alexmorgan.dev" novalidate>
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " autocomplete="name" required />
+              <label for="name">Your name</label>
+              <small class="error" id="nameError" role="alert"></small>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required />
+              <label for="email">Your email</label>
+              <small class="error" id="emailError" role="alert"></small>
+            </div>
+            <div class="field">
+              <input type="text" id="subject" name="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+              <small class="error" id="subjectError" role="alert"></small>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your message</label>
+              <small class="error" id="messageError" role="alert"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span class="btn-label">Open Email App</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Alex<span>.</span></a>
+      <ul class="socials" aria-label="Footer social links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a></li>
+      </ul>
+      <p>&copy; <span id="year">2026</span> Alex Morgan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
